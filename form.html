@@ -1,59 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
     <title>Formulir Pendaftaran</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Buat akun baru</h1>
     <h2>log in form</h2>
 
     <section id="contact">
-        <form action="welcome.php" method="POST">
-            <label for="first-name">first name</label> <br />
-            <input id="first-name" type="text" name="firstName" /><br />
+      <form action="welcome.php" method="POST">
+        <label for="first-name">first name</label> <br />
+        <input  id="first-name" type="text" name="firstName" /><br />
+      
+        <label for="last-name">last name</label> <br />
+        <input id="last-name" type="text" name="lastName" required />
 
-            <label for="last-name">last name</label> <br />
-            <input id="last-name" type="text" name="lastName" required><br />
+        <p>
+          <label>Gender </label></br>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female" required />
+          <label for="female">female</label><br />
+        </p>
+        <p>
+          kewarganegaraan</label>
+          <select id="nationality" name="nationality">
+            <option>Indonesia</option>
+            <option>Amerika</option>
+            <option>Inggris</option><!--Add more nationality options here-->
+          </select>
+        </p>
 
-            <p>
-                <label>Gender</label><br>
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female" required>
-                <label for="female">Female</label><br />
-            </p>
-            <p>
-                Kewarnegaran</label>
-                <select id="nationality" name="nationality">
-                    <option>Indonesia</option>
-                    <option>Jerman</option>
-                    <option>Jepang</option><!-- Add more nationality options here -->
-                </select>
-            </p>
+        <p>
+            <label for="language">languange</label>
+            <input type="checkbox" id="bahasaIndonesia" name="languange[]" value="Bahasa-Indonesia" />
+            <label for="bahasaIndonesia">Bahasa Indonesia</label><br />
+            <input type="checkbox" id="bahasaInggris" name="languange[]" value="Bahasa-Inggris" />
+            <label for="bahasaInggris">Bahasa Inggris</label><br />
+            <input type="checkbox" id="other" name="languange[]" value="Other" />
+            <label for="other">Other</label><br />
+        </p>
+        
+        <p>
+          Bio</br>
+          <textarea id="bio" name="bio" value="bio"></textarea>
+        </p>
 
-            <p>
-                <label for="language">languange</label><br />
-                <input type="checkbox" id="bahasaIndonesia" name="languange[]" value="Bahasa-Indonesia" />
-                <label for="bahasaIndonesia">Bahasa Indonesia</label><br />
-                <input type="checkbox" id="bahasaJerman" name="languange[]" value="Bahasa-Jerman" />
-                <label for="bahasaJerman">Bahasa Jerman</label><br />
-                <input type="checkbox" id="bahasaJepang" name="languange[]" value="Bahasa-Jepang" />
-                <label for="bahasaJepang">Bahasa Jepang</label><br />
-                <input type="checkbox" id="other" name="languange[]" value="Other" />
-                <label for="other">Other</label><br />
-            </p>
-
-            <p>
-                Bio</br>
-                <textarea name="bio" id="bio" value="bio"></textarea>
-            </p>
-
-            <ol>
-                <button type="submit">Sign Up</button>
-            </ol>
-            </form>
-        </section>
-    </body>
+        <ol>
+          <button type="submit">Sign Up</a></button>
+        </ol>
+      </form>
+    </section>
+  </body>
 </html>
